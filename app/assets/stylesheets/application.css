@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+
+html {
+    background-color: #580243;
+}
+
+button#c_sign_in, button#m_sign_in {
+    width: 250px;
+    height: 100px;
+    display: inline;
+    margin: 0px 10px;
+}
+
+div.sign_in_buttons {
+    position: absolute;
+    width: 550px;
+    height: 100px;
+    left: 30%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+}
+
+
