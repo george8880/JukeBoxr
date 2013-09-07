@@ -5,4 +5,9 @@ class ApplicationController < ActionController::Base
   def main
 
   end
+
+  def create_hall
+    @addr = params[:addr]
+    Store.create_store_with_addr(@addr)
+  end
 end

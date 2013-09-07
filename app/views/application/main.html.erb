@@ -2,9 +2,7 @@
     <div class="sign_in_buttons">
       <button class="btn btn-primary btn-lg" id="c_sign_in">Customer Sign In</button><button class="btn btn-primary btn-lg" id="m_sign_in">Merchant Sign In</button>
     </div>
-    <div id="fbsignin">
-
-    </div>
+    <div id="fbsignin"> </div>
     <div id="m_logon">
       <form role="form">
         <div class="form-group">
@@ -35,8 +33,10 @@
       var password;
       $('#sub').click(function(){
           user= $("#UserName").val();
-          password= $("#password").val();
-          console.log(user + " and " + password);
+          jQuery.ajax({
+              type: 'post',
+              url: "/application/create_hall"
+          });
       });
     </script>
 <% end %>
